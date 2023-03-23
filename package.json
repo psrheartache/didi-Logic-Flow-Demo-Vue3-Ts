@@ -1,0 +1,38 @@
+{
+  "name": "didi-logic-flow-mvp-demo-vue3-ts",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint --fix --ext .js,.vue src"
+  },
+  "dependencies": {
+    "@logicflow/core": "^1.2.1",
+    "@logicflow/extension": "^1.2.1",
+    "vue": "^3.2.45",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.24",
+    "@typescript-eslint/eslint-plugin": "5.10.0",
+    "@typescript-eslint/parser": "5.10.0",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^8.3.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "prettier": "^2.6.2",
+    "typescript": "4.5.4",
+    "vite": "^2.9.2",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-eslint": "^1.4.0",
+    "vue-tsc": "0.29.8"
+  }
+}
