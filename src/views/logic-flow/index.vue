@@ -17,6 +17,7 @@ import { ref, onMounted } from 'vue'
 import DmpNodeExtension from './index'
 
 const lf = ref()
+const currentNode = ref(null) // 存储当前节点数据
 
 onMounted(() => {
   lf.value = new LogicFlow({
@@ -35,6 +36,12 @@ onMounted(() => {
         y: 400,
       },
     ],
+  })
+
+  // 全局绑定节点点击事件
+  lf.value.on('node:click', ({ data }: { data: any }) => {
+    window.console.log(data)
+    currentNode.value = data
   })
 })
 </script>
