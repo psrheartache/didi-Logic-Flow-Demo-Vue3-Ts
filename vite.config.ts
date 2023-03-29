@@ -1,8 +1,18 @@
+/*
+ * @Author: Yufeng CHEN
+ * @Date: 2023-03-29 18:59:13
+ * @LastEditors: Yufeng CHEN
+ * @LastEditTime: 2023-03-29 19:03:04
+ * @FilePath: /didi-Logic-Flow-Demo-Vue3-Ts/vite.config.ts
+ */
 import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import eslintPlugin from 'vite-plugin-eslint' // 引入vite-plugin-vue
 import compressPlugin from 'vite-plugin-compression'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ArcoResolver } from 'unplugin-vue-components/resolvers'
 
 const lib = defineConfig({
   base: './',
@@ -43,6 +53,16 @@ const lib = defineConfig({
   },
   plugins: [
     vue(),
+    AutoImport({
+      resolvers: [ArcoResolver()],
+    }),
+    Components({
+      resolvers: [
+        ArcoResolver({
+          sideEffect: true
+        })
+      ]
+    }),
     compressPlugin({
       deleteOriginFile: false,
       algorithm: 'gzip',

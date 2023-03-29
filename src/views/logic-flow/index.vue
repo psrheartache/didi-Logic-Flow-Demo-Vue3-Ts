@@ -2,8 +2,8 @@
  * @Author: Yufeng CHEN
  * @Date: 2023-03-23 16:41:55
  * @LastEditors: Yufeng CHEN
- * @LastEditTime: 2023-03-23 22:28:47
- * @FilePath: /didi-Logic-Flow-Demo-Vue3-Ts-/src/views/logic-flow/index.vue
+ * @LastEditTime: 2023-03-29 19:11:30
+ * @FilePath: /didi-Logic-Flow-Demo-Vue3-Ts/src/views/logic-flow/index.vue
 -->
 <template>
   <div class="logic-wrapper">
@@ -14,7 +14,7 @@
 <script lang="ts" setup>
 import LogicFlow from '@logicflow/core'
 import { ref, onMounted } from 'vue'
-import DmpNodeExtension from './index'
+import AutoNodeExtension from './index'
 
 const lf = ref()
 const currentNode = ref(null) // 存储当前节点数据
@@ -25,16 +25,16 @@ onMounted(() => {
     grid: true,
     snapline: true,
     history: true,
-    plugins: [DmpNodeExtension],
+    plugins: [AutoNodeExtension],
   })
   lf.value.render({
     nodes: [
-      {
-        id: 'node_123_1',
-        type: 'vue-html',
-        x: 720,
-        y: 400,
-      },
+      // {
+      //   id: 'node_123_1',
+      //   type: 'vue-html',
+      //   x: 720,
+      //   y: 400,
+      // },
     ],
   })
 
