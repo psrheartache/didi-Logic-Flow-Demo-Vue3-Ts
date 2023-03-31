@@ -2,7 +2,7 @@
  * @Author: Yufeng CHEN
  * @Date: 2023-03-23 16:41:55
  * @LastEditors: Yufeng CHEN
- * @LastEditTime: 2023-03-29 19:11:30
+ * @LastEditTime: 2023-03-31 17:51:28
  * @FilePath: /didi-Logic-Flow-Demo-Vue3-Ts/src/views/logic-flow/index.vue
 -->
 <template>
@@ -13,7 +13,7 @@
 
 <script lang="ts" setup>
 import LogicFlow from '@logicflow/core'
-import { ref, onMounted } from 'vue'
+import { toRaw, ref, onMounted } from 'vue'
 import AutoNodeExtension from './index'
 
 const lf = ref()
@@ -27,7 +27,8 @@ onMounted(() => {
     history: true,
     plugins: [AutoNodeExtension],
   })
-  lf.value.render({
+  const lfRaw = toRaw(lf.value)
+  lfRaw.render({
     nodes: [
       // {
       //   id: 'node_123_1',
