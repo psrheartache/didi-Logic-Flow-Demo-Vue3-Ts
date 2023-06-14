@@ -20,6 +20,8 @@
 ## 运行效果
 ![didi-Logic-Flow-Demo-Vue3-Ts](https://github.com/psrheartache/didi-Logic-Flow-Demo-Vue3-Ts/blob/main/src/assets/images/login-flow.png?raw=true)
 
+![didi-Logic-Flow-Demo-Vue3-Ts](https://github.com/psrheartache/didi-Logic-Flow-Demo-Vue3-Ts/blob/main/src/assets/images/link.png?raw=true)
+
 ## 参考
 
 [目前提供的vue3渲染html节点存在问题#686](https://github.com/didi/LogicFlow/issues/686) didi
