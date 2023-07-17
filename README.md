@@ -1,11 +1,3 @@
-<!--
- * @Author: Yufeng CHEN
- * @Date: 2023-03-23 22:55:21
- * @LastEditors: Yufeng CHEN
- * @LastEditTime: 2023-03-23 23:29:22
- * @FilePath: /didi-Logic-Flow-Demo-Vue3-Ts/README.md
--->
-
 # didi-Logic-Flow-Demo-Vue3-Ts
 
 一个基于滴滴团队Login-Flow流程图编辑库实现的Vue3+Vite+TypeScript的MvpDemo

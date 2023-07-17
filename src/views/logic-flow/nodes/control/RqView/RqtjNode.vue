@@ -1,10 +1,3 @@
-<!--
- * @Author: Yufeng CHEN
- * @Date: 2023-03-22 16:17:26
- * @LastEditors: Yufeng CHEN
- * @LastEditTime: 2023-03-29 19:19:45
- * @FilePath: /didi-Logic-Flow-Demo-Vue3-Ts/src/views/logic-flow/nodes/control/RqView/RqtjNode.vue
--->
 <template>
   <div class="control-node">
     <div class="node-header">Group控制器 <img class="del-icon" :src="delIcon" @click="delNode" /></div>

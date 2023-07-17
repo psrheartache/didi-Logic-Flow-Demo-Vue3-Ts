@@ -132,7 +132,17 @@ onMounted(() => {
 .ml-20 {
   margin-left: 20px;
 }
-
+.lf-line-text {
+  width: 36px !important;
+  height: 36px !important;
+  stroke: #e5e6eb;
+  stroke-width: 1px;
+  rect {
+    width: 36px !important;
+    height: 36px !important;
+    transform: translate(14px, -9px);
+  }
+}
 .logic-wrapper {
   width: 100%;
   height: 100%;

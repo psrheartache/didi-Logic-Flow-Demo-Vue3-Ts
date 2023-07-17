@@ -1,10 +1,3 @@
-/*
- * @Author: Yufeng CHEN
- * @Date: 2023-01-04 14:04:23
- * @LastEditors: Yufeng CHEN
- * @LastEditTime: 2023-03-23 17:38:56
- * @FilePath: /didi-Logic-Flow-Demo-Vue3-Ts-/.eslintrc.js
- */
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path')
 

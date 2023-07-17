@@ -1,10 +1,3 @@
-<!--
- * @Author: Yufeng CHEN
- * @Date: 2023-03-22 18:10:42
- * @LastEditors: Yufeng CHEN
- * @LastEditTime: 2023-03-29 19:23:17
- * @FilePath: /didi-Logic-Flow-Demo-Vue3-Ts/src/views/logic-flow/tools/Palette.vue
--->
 <template>
   <div class="dmp-atuo-collapse">
     <div class="collapse-item">
@@ -17,7 +10,7 @@
           @mousedown="startDrag(groupItem)"
         >
           <div class="img-wrapper green">
-            <img class="icon" :src="groupItem.icon" />
+            <img class="icon" :draggable="false" :src="groupItem.icon" />
           </div>
           <p>{{ groupItem.text }}</p>
         </div>
@@ -33,7 +26,7 @@
           @mousedown="startDrag(channelItem)"
         >
           <div class="img-wrapper blue">
-            <img class="icon" :src="channelItem.icon" />
+            <img class="icon" :draggable="false" :src="channelItem.icon" />
           </div>
           <p>{{ channelItem.text }}</p>
         </div>
@@ -49,7 +42,7 @@
           @mousedown="startDrag(controlItem)"
         >
           <div class="img-wrapper orange">
-            <img class="icon" :src="controlItem.icon" />
+            <img class="icon" :draggable="false" :src="controlItem.icon" />
           </div>
           <p>{{ controlItem.text }}</p>
         </div>

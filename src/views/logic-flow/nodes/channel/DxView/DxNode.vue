@@ -1,10 +1,3 @@
-<!--
- * @Author: Yufeng CHEN
- * @Date: 2023-03-22 16:17:26
- * @LastEditors: Yufeng CHEN
- * @LastEditTime: 2023-03-29 19:19:58
- * @FilePath: /didi-Logic-Flow-Demo-Vue3-Ts/src/views/logic-flow/nodes/channel/DxView/DxNode.vue
--->
 <template>
   <div class="channel-node">
     <div class="node-header">Group通道 <img class="del-icon" :src="delIcon" @click="delNode" /></div>

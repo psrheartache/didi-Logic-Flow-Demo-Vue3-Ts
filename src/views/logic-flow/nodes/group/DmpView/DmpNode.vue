@@ -1,10 +1,3 @@
-<!--
- * @Author: Yufeng CHEN
- * @Date: 2023-03-22 16:17:26
- * @LastEditors: Yufeng CHEN
- * @LastEditTime: 2023-03-29 19:10:08
- * @FilePath: /didi-Logic-Flow-Demo-Vue3-Ts/src/views/logic-flow/nodes/group/DmpView/DmpNode.vue
--->
 <template>
   <div class="group-node">
     <div class="node-header">AllGroup <img class="del-icon" :src="delIcon" @click="delNode" /></div>

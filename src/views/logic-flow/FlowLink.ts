@@ -18,9 +18,11 @@ class FlowLinkModel extends BezierEdgeModel {
   getTextStyle() {
     const style = super.getTextStyle()
     const { properties } = this
-    const textColor = switchLineStroke(properties.type, this.isSelected)
-    style.color = textColor
-    style.fontSize = 15
+    // const textColor = switchLineStroke(properties.type, this.isSelected)
+    // style.color = textColor
+    style.stroke = '#4e5969'
+    style.fontSize = 14
+    style.transform = 'translate(22, 0)' // 文字加边框
     return style
   }
 

@@ -1,11 +1,3 @@
-/*
- * @Author: Yufeng CHEN
- * @Date: 2023-03-23 16:41:55
- * @LastEditors: Yufeng CHEN
- * @LastEditTime: 2023-03-29 19:13:50
- * @FilePath: /didi-Logic-Flow-Demo-Vue3-Ts/src/views/logic-flow/nodes/TestHtmlNode.ts
- */
-
 /* eslint max-classes-per-file: ["error", 2] */
 import { HtmlNode, HtmlNodeModel } from '@logicflow/core'
 import { createApp, ref, h, App } from 'vue'

@@ -1,10 +1,3 @@
-/*
- * @Author: Yufeng CHEN
- * @Date: 2023-03-29 18:59:13
- * @LastEditors: Yufeng CHEN
- * @LastEditTime: 2023-03-29 19:03:04
- * @FilePath: /didi-Logic-Flow-Demo-Vue3-Ts/vite.config.ts
- */
 import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
