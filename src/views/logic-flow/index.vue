@@ -102,11 +102,11 @@ onMounted(() => {
       })
 
       if (type === 'yes') {
-        // edgeModel.updateText('满足')
-        edgeModel.text.value = '满足'
+        // edgeModel.updateText('是')
+        edgeModel.text.value = '是'
       }
       if (type === 'no') {
-        edgeModel.updateText('不满足')
+        edgeModel.updateText('否')
       }
     }
   )
